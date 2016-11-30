@@ -8,10 +8,16 @@ This can be handy when you are in state where compose is not enough, thus you re
 
 ### Run
 
-> docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v $(pwd)/docker-compose.yml:/docker-compose.yml kalemena/compose up -d
+```bash
+$ docker run -it --rm --name compose \
+   -v /var/run/docker.sock:/var/run/docker.sock \
+   -v $(pwd)/docker-compose.yml:/docker-compose.yml \
+   kalemena/compose up -d
+```
 
 ### Build
 
-> docker build -t kalemena/compose .
-
+```bash
+$ docker build -t kalemena/compose .
+```
 
