@@ -23,6 +23,6 @@ RUN echo "http://dl-4.alpinelinux.org/alpine/edge/community" >> /etc/apk/reposit
 # compose
 RUN apk --update add py-pip py-yaml &&\
     pip install -U docker-compose==${DOCKER_COMPOSE_VERSION} &&\
-    rm -rf `find / -regex '.*\.py[co]' -or -name apk`
+    rm -rf `find / -regex '.*\.py[co]'`
 
 CMD ["docker-compose", "--version"]
