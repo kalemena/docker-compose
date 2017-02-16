@@ -27,3 +27,5 @@ __Run__
 __Build__
 
 > docker build --build-arg DOCKER_VERSION=1.11.2 --build-arg DOCKER_COMPOSE_VERSION=1.8.0 -t kalemena/compose:1.11.2 .
+
+__Test__
