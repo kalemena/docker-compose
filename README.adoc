@@ -3,14 +3,14 @@ Docker client and server can be incompatible when using remote API.
 With this image, one may put proper client version in front of older server version.
 This is also useful in case when user requires a bit of orchestration around compose capabilities while still keeping single command line to run a complex environment.
 
-# Versions
+= Versions
 
 The tag is docker version (not compose version)
 
 * latest
 * 1.11.2
 
-# How-To
+= How-To
 
 __Run__
 
